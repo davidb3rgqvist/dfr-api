@@ -53,7 +53,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'drf-app-2024.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'drf-app-2024-29cb82ccb5b6.herokuapp.com']
 
 # Application definition
 
@@ -168,6 +168,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 
 # Default primary key field type
